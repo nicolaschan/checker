@@ -1,3 +1,6 @@
+# Don't push database
+data.db
+
 # Logs
 logs
 *.log
