@@ -1,7 +1,11 @@
 # checker
-A simple script that checks if a particular string has been entered before. Uses SQLite in the backend for fast queries.
+A simple script that checks if a particular string has been entered before.
 
-Intended use case is when giving out free stickers, we want to make sure the person we are giving to tells us an email that we have not seen before.
+**Intended use case:** When giving out free stickers, we want to make sure the person we are giving to tells us an email that we have not seen before so each person gets one sticker. They could lie and give false email addresses, but we expect that to be rare (and we'd probably recognize them).
+
+- SQLite backend for fast queries (overkill, but why not)
+- Persistent storage so it's fine if you restart your computer
+- Simple command line interface using [vorpal](https://vorpal.js.org)
 
 ## Installation
 ```bash
