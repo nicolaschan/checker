@@ -28,5 +28,4 @@ function reset () {
   return db.prepare('DELETE FROM data').run()
 }
 
-
 module.exports = { exists, add, remove, list, count, reset }
